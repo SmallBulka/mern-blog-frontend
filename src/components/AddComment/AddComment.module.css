@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 17px;
+  padding: 10px 5px;
+}
+
+.avatar {
+  margin-right: 15px;
+}
+
+.form {
+  width: 100%;
+}
+.form button {
+  margin-top: 10px;
+}
+
+.title {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=AddComment.module.css.map */
