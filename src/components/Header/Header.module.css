@@ -30,4 +30,16 @@
 }
 .buttons a {
   text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .inner {
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=Header.module.css.map */
