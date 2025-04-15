@@ -1,7 +1,7 @@
 // components/PostsByTag.js
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Post, TagsBlock, UserInfo } from '../components';
+import { Post, TagsBlock } from '../components';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts, fetchTags } from '../redux/slices/posts';
 import { PostSkeleton } from '../components/Post/Skeleton';

@@ -1,20 +1,14 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import TagIcon from "@mui/icons-material/Tag";
-import ListItemText from "@mui/material/ListItemText";
 import Skeleton from "@mui/material/Skeleton";
 
 import { SideBlock } from "./SideBlock";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { fetchPosts, fetchPostsByTag, fetchPostsByTags, setCurrentTag } from "../redux/slices/posts";
+import {  useNavigate } from "react-router-dom";
+import { fetchPosts, fetchPostsByTag } from "../redux/slices/posts";
 import { useDispatch, useSelector } from "react-redux";
-import { Box, Button, Card, CardContent, Chip, Paper, Typography } from "@mui/material";
+import {  Button,  Chip, Paper, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import axios from "axios";
+
 
 
 

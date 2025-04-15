@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import styles from './Post.module.scss';
 import { UserInfo } from '../UserInfo';
 import { PostSkeleton } from './Skeleton';
-import { useDispatch, useSelector} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { fetchPostsByTag, fetchRemovePost } from '../../redux/slices/posts';
 import LikeButton from './LikeButton';
 import { Chat } from '@mui/icons-material';

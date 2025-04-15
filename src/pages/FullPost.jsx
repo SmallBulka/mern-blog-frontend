@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 
 import { Index} from "../components/AddComment";
 import { SideBlock } from "../components/SideBlock";
-import LikeButton from "../components/Post/LikeButton";
+
 
 
 

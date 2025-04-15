@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Grid from "@mui/material/Grid";
@@ -9,10 +9,7 @@ import { TagsBlock } from "../components/TagsBlock";
 
 import { useDispatch, useSelector } from "react-redux";
 import { SearchBlock } from "../components/SearchBlock";
-import { useSearchParams } from "react-router-dom";
-import { fetchPopularPosts, fetchPopularTags, fetchPosts, fetchPostsByTag, fetchTags, fetchViews, selectCurrentTag, selectIsLoading, selectPosts, selectSortBy, selectTags, setCurrentTag, setSort, setSortBy } from "../redux/slices/posts";
-import { Box, Typography } from "@mui/material";
-import { PostSkeleton } from "../components/Post/Skeleton";
+import { fetchPostsByTag, fetchTags, fetchViews,  } from "../redux/slices/posts";
 
 export const Home = ({ commentsCount, initialLikes}) => {
   const dispatch = useDispatch();
