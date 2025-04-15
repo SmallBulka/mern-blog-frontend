@@ -28,6 +28,11 @@ export const FullPost = () => {
       return;
     }
   
+    if (isNaN(id)) {
+      console.error("ID статьи не является числом");
+      return;
+    }
+  
     setLoading(true);
   
     axios
@@ -41,6 +46,7 @@ export const FullPost = () => {
         alert("Не удалось загрузить статью. Попробуйте позже.");
         navigate("/");
         setLoading(false);
+        setComments([]);
       });
   }, [id, navigate]);
 

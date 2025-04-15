@@ -34,6 +34,7 @@ export const AddPost = () => {
     } catch (err) {
       console.warn(err)
       alert('Ошибка при загрузки файла')
+      isLoading && setLoading(false)
     }
   };
 
@@ -80,7 +81,7 @@ export const AddPost = () => {
         alert("error")
       })
     }
-  },[])
+  },[id])
   
 
   const options = useMemo(

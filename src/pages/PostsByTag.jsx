@@ -37,6 +37,7 @@ const PostsByTag = () => {
 
   const handleBack = useCallback(() => {
     navigate(-1);
+    handleTabChange('newest');
   }, [navigate]);
 
   if (!decodedTag) {
